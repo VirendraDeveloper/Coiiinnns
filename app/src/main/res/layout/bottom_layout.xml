@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/text_size">
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INR0.00"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/email_dp" />
+
+    <TextView
+        android:id="@+id/tv_change_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten_dp"
+        android:text="@string/chnage_curency"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/email_dp" />
+
+    <TextView
+        android:id="@+id/tv_quick_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quick_bal"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/email_dp" />
+</LinearLayout>

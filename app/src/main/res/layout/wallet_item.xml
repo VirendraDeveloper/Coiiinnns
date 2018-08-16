@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_balance1"
+        android:orientation="vertical"
+        android:padding="@dimen/five_dp">
+
+        <TextView
+            android:id="@+id/tv_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- - - - - - - -"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00000 BTC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_balance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ten_dp">
+
+        <TextView
+
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="$ 0.00"
+            android:textColor="@color/colorBlack" />
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/ten_dp"
+            android:paddingLeft="@dimen/ten_dp"
+            android:paddingRight="@dimen/email_dp"
+            android:paddingTop="@dimen/ten_dp"
+            android:src="@mipmap/ic_info" />
+    </LinearLayout>
+</RelativeLayout>

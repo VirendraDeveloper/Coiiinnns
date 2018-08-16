@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coldstoragecoins">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.coldstoragecoins.CoinsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_circular_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.coldstoragecoins.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.coldstoragecoins.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.coldstoragecoins.RegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.coldstoragecoins.HomeActivity" />
+        <activity
+            android:name="com.coldstoragecoins.AccountActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.coldstoragecoins.CurrencyActivity" />
+        <activity android:name="com.coldstoragecoins.QRActivity" />
+        <activity android:name="com.coldstoragecoins.WalletActivity" />
+    </application>
+
+</manifest>

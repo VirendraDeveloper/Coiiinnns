@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.coldstoragecoins.CurrencyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9">
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten_dp"
+            android:text="@string/refresh"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/default_cur"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/ten_dp"
+            android:text="@string/done"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EFF4"
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:text="@string/papupar_currency"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tv_usd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/five_dp"
+        android:text="@string/usd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/five_dp"
+        android:background="#F4F4F4" />
+
+    <TextView
+        android:id="@+id/tv_eur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/five_dp"
+        android:text="@string/eur" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/five_dp"
+        android:background="#F4F4F4" />
+
+    <TextView
+        android:id="@+id/tv_gbp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/five_dp"
+        android:text="@string/gbp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EFF4"
+        android:paddingBottom="@dimen/ten_dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/ten_dp"
+        android:text="@string/chnage_curency"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlue" />
+
+    <ListView
+        android:id="@+id/lv_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite" />
+</LinearLayout>
